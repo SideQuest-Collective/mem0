@@ -273,7 +273,7 @@ memories = mem0.search(
 # Configure agent with custom model settings
 agent = Agent(
     name="custom_agent",
-    model="gemini-2.0-flash",  # or use LiteLLM for other models
+    model="gemini-2.0-flash",  # or swap to another supported provider model
     instruction="Custom agent behavior",
     tools=[memory_tools],
     # Additional ADK configurations
@@ -293,4 +293,3 @@ os.environ["GOOGLE_CLOUD_LOCATION"] = "us-central1"
     Compare with OpenAI's agent framework
   </Card>
 </CardGroup>
-

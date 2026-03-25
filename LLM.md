@@ -273,7 +273,7 @@ config = MemoryConfig(
 
 ### Supported Providers
 
-#### LLM Providers (19 supported)
+#### LLM Providers (18 supported)
 - **openai** - OpenAI GPT models (default)
 - **anthropic** - Claude models
 - **gemini** - Google Gemini
@@ -282,7 +282,6 @@ config = MemoryConfig(
 - **together** - Together AI
 - **aws_bedrock** - AWS Bedrock models
 - **azure_openai** - Azure OpenAI
-- **litellm** - LiteLLM proxy
 - **deepseek** - DeepSeek models
 - **xai** - xAI models
 - **sarvam** - Sarvam AI
@@ -431,7 +430,6 @@ config = MemoryConfig(
 - **DeepSeek** - Advanced reasoning models
 - **Sarvam** - Indian language models
 - **XAI** - xAI models
-- **LiteLLM** - Unified LLM interface
 - **LangChain** - LangChain LLM integration
 
 #### Vector Store Providers
@@ -1319,4 +1317,3 @@ async def delete_memory(memory_id: str):
 ## License
 
 Mem0 is available under the Apache 2.0 License. See the [LICENSE](https://github.com/mem0ai/mem0/blob/main/LICENSE) file for more details.
-

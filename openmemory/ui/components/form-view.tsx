@@ -109,7 +109,6 @@ export function FormView({ settings, onChange }: FormViewProps) {
     "Ollama": "ollama",
     "Together": "together",
     "Groq": "groq",
-    "Litellm": "litellm",
     "Mistral AI": "mistralai",
     "Google AI": "google_ai",
     "AWS Bedrock": "aws_bedrock",

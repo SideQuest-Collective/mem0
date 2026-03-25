@@ -13,11 +13,12 @@ Data analyst analyzes user data → All models can reference previous research.
 import logging
 
 from dotenv import load_dotenv
-from litellm import completion
+from openai import OpenAI
 
 from mem0 import MemoryClient
 
 load_dotenv()
+client = OpenAI()
 
 # Configure logging
 logging.basicConfig(
@@ -84,7 +85,7 @@ Build upon the team's existing research. Reference previous findings when releva
 Provide actionable insights in your area of expertise."""
 
     # Call the specialist's model
-    response = completion(
+    response = client.chat.completions.create(
         model=spec_info["model"],
         messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": task}],
     )

@@ -17,7 +17,6 @@ class LlmConfig(BaseModel):
             "groq",
             "together",
             "aws_bedrock",
-            "litellm",
             "azure_openai",
             "openai_structured",
             "azure_openai_structured",

@@ -38,7 +38,6 @@ class LlmFactory:
         "groq": ("mem0.llms.groq.GroqLLM", BaseLlmConfig),
         "together": ("mem0.llms.together.TogetherLLM", BaseLlmConfig),
         "aws_bedrock": ("mem0.llms.aws_bedrock.AWSBedrockLLM", BaseLlmConfig),
-        "litellm": ("mem0.llms.litellm.LiteLLM", BaseLlmConfig),
         "azure_openai": ("mem0.llms.azure_openai.AzureOpenAILLM", AzureOpenAIConfig),
         "openai_structured": ("mem0.llms.openai_structured.OpenAIStructuredLLM", OpenAIConfig),
         "anthropic": ("mem0.llms.anthropic.AnthropicLLM", AnthropicConfig),
